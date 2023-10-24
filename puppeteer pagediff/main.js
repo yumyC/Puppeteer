@@ -50,6 +50,18 @@ async function processUrl(browser, url, i) {
       await page.goto(url.beforeUrl, {waitUntil: 'networkidle2', timeout: 10000 });
       const screenshot = await page.screenshot({ path: `${imgPrefix}${foldNames[1]}/before${i}.png` });
       console.log(`visiting${url.afterUrl}...`);
+      // 自定义更改dom结构
+      // await page.waitForSelector('#disclaimer-bar');
+      // await page.evaluate(() => {
+      //   const disclaimer = document.querySelector('#disclaimer-bar');
+      //   if (disclaimer) {
+      //     disclaimer.parentNode.removeChild(disclaimer);
+      //   }
+      //   const header = document.querySelector('.has-disclaimer');
+      //   if (header) {
+      //   header.style.paddingTop = '0px';
+      //   }
+      // });
       await page.goto(url.afterUrl, {waitUntil: 'networkidle2', timeout: 10000 });
       const screenshot2 = await page.screenshot({ path: `${imgPrefix}${foldNames[1]}/after${i}.png` });
       await diffImage(screenshot, screenshot2, `${url.beforeUrl} and ${url.afterUrl}`);
