@@ -1,0 +1,19 @@
+{
+  "name": "puppeteer_pagediff",
+  "version": "1.0.0",
+  "description": "A tool for screenshot",
+  "keywords": ["puppeteer"],
+  "main": "main.js",
+  "scripts": {
+    "diff": "node main.js"
+  },
+  "author": "yumyc",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yumyC/Puppeteer.git"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.3"
+  }
+}
