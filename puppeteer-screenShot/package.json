@@ -5,7 +5,7 @@
   "keywords": ["puppeteer"],
   "main": "main.js",
   "scripts": {
-    "diff": "node main.js"
+    "start": "node main.js"
   },
   "author": "yumyc",
   "license": "ISC",
