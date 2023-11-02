@@ -2,7 +2,11 @@
   "name": "puppeteer_pagediff",
   "version": "1.2.2",
   "description": "A tool for comparing differences between different pages",
-  "keywords": ["pagediff", "puppeteer", "pixelmatch"],
+  "keywords": [
+    "pagediff",
+    "puppeteer",
+    "pixelmatch"
+  ],
   "main": "main.js",
   "scripts": {
     "diff": "node main.js"
@@ -17,6 +21,7 @@
     "phantomjs-prebuilt": "^2.1.16",
     "pixelmatch": "^5.3.0",
     "pngjs": "^7.0.0",
-    "puppeteer": "^21.0.3"
+    "puppeteer": "^21.0.3",
+    "sharp": "^0.32.6"
   }
 }
